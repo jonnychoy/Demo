@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>首页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<style type="text/css">
+	.content{
+		margin: 0 auto;
+		max-width: 1920px;
+	}
+	img{
+		display: none;
+	}
+	.db{
+		display: block;
+	}
+</style>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" id="body">
+<!-- Save for Web Slices (首页.png) -->
+	<div class="content">	
+		<img src="images/1.png" width="100%" height="auto" alt="" i="1" class="db">
+		<img src="images/2.png" width="100%" height="auto" alt="" i="2">
+		<img src="images/3.png" width="100%" height="auto" alt="" i="3">
+		<img src="images/4.png" width="100%" height="auto" alt="" i="4">
+		<img src="images/5.png" width="100%" height="auto" alt="" i="5">
+		<img src="images/6.png" width="100%" height="auto" alt="" i="6">
+		<img src="images/7.png" width="100%" height="auto" alt="" i="7">
+	</div>
+<!-- End Save for Web Slices -->
+</body>
+</html>
+<script>
+
+	var a = 1;
+	$('body').click(function(){
+		a = a+1;
+		if(a>8) {
+			a  = 1;
+		};
+		$('[i="'+a+'"]').show().siblings().hide();
+	});
+
+ 
+</script>
